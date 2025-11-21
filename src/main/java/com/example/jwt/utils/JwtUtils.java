@@ -23,7 +23,7 @@ public class JwtUtils {
        return  Jwts.builder().subject(username)
                 .claims(new HashMap<String,Object>())
                 .issuedAt(new Date(System.currentTimeMillis()))
-                .expiration(new Date(System.currentTimeMillis()+1000*60*10))
+                .expiration(new Date(System.currentTimeMillis()+1000*60*2))
                 .signWith(getSecretKey()).compact();
     }
 
