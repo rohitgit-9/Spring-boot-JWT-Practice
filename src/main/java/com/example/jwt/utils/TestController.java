@@ -8,7 +8,7 @@ public class TestController {
 
     @GetMapping("/test")
     public String testMethod(){
-
+        System.out.println("inside test method");
         return "test api";
     }
 }
